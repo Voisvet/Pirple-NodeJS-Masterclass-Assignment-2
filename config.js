@@ -11,14 +11,16 @@ var environments = {};
 environments.debug = {
   'envName': 'debug',
   'httpPort': 8080,
-  'httpsPort': 8081
+  'httpsPort': 8081,
+  'hashSecret': 'thisIsASecret'
 };
 
 // Production configuration
 environments.production = {
   'envName': 'production',
   'httpPort': 80,
-  'httpsPort': 443
+  'httpsPort': 443,
+  'hashSecret': 'zjfbe654wgj7i4g'
 };
 
 // Determine requested in command line environment
